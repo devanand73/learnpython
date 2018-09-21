@@ -1,3 +1,4 @@
+#script to clasify files based on extension into seperate folders.needs to be customised for my mac
 import os
 import shutil
 
