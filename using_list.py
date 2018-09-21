@@ -3,9 +3,9 @@ shoplist = ['apple', 'mango', 'carrot', 'banana']
 
 print("I have", len(shoplist), "items to purchase.")
 
-print('These items are:', end=' ')  # Notice the comma at end of the line
+print ('These items are: ')
 for item in shoplist:
-	print item,
+	print (item)
 
 print('\nI also have to buy rice.')
 shoplist.append('rice')
@@ -17,6 +17,12 @@ print('Sorted shopping list is', shoplist)
 
 print('The first item I will buy is', shoplist[0])
 olditem = shoplist[0]
-del shoplist[0]
+#del shoplist[0]
+shoplist.remove("apple")
 print('I bought the', olditem)
 print('My shopping list is now', shoplist)
+shoplist.remove("rice")
+print('i have bought last item',shoplist[-1])
+shoplist.clear()
+if len(shoplist)==0:
+    print('shoping done! lets go home:items in shoping list =', len(shoplist))
