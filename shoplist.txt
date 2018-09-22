@@ -1,0 +1,8 @@
+(S'apple'
+p0
+S'mango'
+p1
+S'carrot'
+p2
+tp3
+.
